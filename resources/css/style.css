@@ -22,10 +22,15 @@ nav {
 }
 
 div {
-  border: 1px;
+  border: 1px dotted black;
 }
 
-#maincontainer.column {
+#maincontainer {
+  display: flex;
+  top: 50px;
+}
+
+.column {
   display: flex;
   flex-wrap: wrap;
   }
