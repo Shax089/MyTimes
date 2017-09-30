@@ -6,6 +6,7 @@
   border-bottom: 1px;
   position: fixed;
   width: 100%;
+  height:500px;
 }
 
 h1 {
@@ -27,7 +28,7 @@ div {
 }
 
 main {
-  top: 500px;
+  top: 600px;
   overflow: scroll;
 }
 .maincontainer {
@@ -35,7 +36,7 @@ main {
 }
 
 .column {
-  display: flex;
+  display: inline-block;
   flex-wrap: wrap;
   }
 
