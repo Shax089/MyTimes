@@ -4,6 +4,8 @@
   font-family: Verdana;
   font-weight: bold;
   border-bottom: 1px;
+  position: fixed;
+  width: 100%;
 }
 
 h1 {
@@ -16,8 +18,25 @@ nav {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+  align-content: space-between;
 }
 
-body {
+div {
+  border: 1px;
+}
 
+.maincontainer {
+  display: flex;
   }
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
