@@ -16,16 +16,16 @@ body {
   height:100px;
 }
 
-.logo {
+.header.logo {
   height: 75px;
 }
 
-h1 {
+.header h1 {
   color: MediumAquamarine;
   font-size: 14px;
 }
 
-nav {
+nav .ul {
   margin: 0 auto;
   display: inline-block;
   flex-wrap: wrap;
@@ -37,27 +37,25 @@ div {
   border: 1px solid black;
 }
 
-main {
+.maincontainer {
   top: 600px;
   overflow: scroll;
-}
-main .maincontainer {
   display: inline-flex;
 }
 
-main .maincontainer.column {
+.maincontainer.column {
   display: inline-flex;
   flex-wrap: wrap;
   }
 
-main .maincontainer.column.large {
+.maincontainer.column.large {
   width: 630px;
 }
 
-main .maincontainer.column.medium {
+.maincontainer.column.medium {
   width: 300px;
 }
 
-main .maincontainer.column.small {
+.maincontainer.column.small {
   width: 240px;
 }
