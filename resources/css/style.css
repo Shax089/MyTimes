@@ -1,23 +1,33 @@
-#header {
-  display: flex;
+/* Universal Styles */
+body {
+  margin: 0px;
+  background-color: WhiteSmoke;
+}
+
+/* Header */
+.header {
+  display: inline-flex;
   font-size: 14px;
   font-family: Verdana;
   font-weight: bold;
   border-bottom: 1px;
   position: fixed;
   width: 100%;
-  height:500px;
+  height:100px;
+}
+
+.logo {
+  height: 75px;
 }
 
 h1 {
-  display: flex;
-  flex: column wrap;
   color: MediumAquamarine;
+  font-size: 14px;
 }
 
 nav {
   margin: 0 auto;
-  display: flex;
+  display: inline-block;
   flex-wrap: wrap;
   align-items: stretch;
   align-content: space-between;
@@ -31,23 +41,23 @@ main {
   top: 600px;
   overflow: scroll;
 }
-.maincontainer {
-  display: flex;
+main .maincontainer {
+  display: inline-flex;
 }
 
-.column {
-  display: inline-block;
+main .maincontainer.column {
+  display: inline-flex;
   flex-wrap: wrap;
   }
 
-.column.large {
+main .maincontainer.column.large {
   width: 630px;
 }
 
-.column.medium {
+main .maincontainer.column.medium {
   width: 300px;
 }
 
-.column.small {
+main .maincontainer.column.small {
   width: 240px;
 }
