@@ -43,26 +43,36 @@ h1 {
   border: 1px solid blue;
   position: relative;
   overflow: scroll;
-  display: inline-flex;
+  display: inline-block;
 }
 
 .maincontainer.column {
   border: 1px solid green;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
+  width: 2000px;
   }
 
-.maincontainer.column.large {
+.column.large {
   border: 1px solid yellow;
   width: 630px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
 }
 
-.maincontainer.column.medium {
+.column.medium {
   border: 1px solid red;
   width: 300px;
+  display:flex;
+  flex-flow: column wrap;
+  align-content: space-between;
 }
 
-.maincontainer.column.small {
+.column.small {
   border: 1px solid orange;
   width: 240px;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
 }
