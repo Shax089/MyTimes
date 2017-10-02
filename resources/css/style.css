@@ -1,61 +1,66 @@
 /* Universal Styles */
 body {
-  margin: 0px;
+  border: 1px solid yellow;
   background-color: WhiteSmoke;
 }
 
 /* Header */
+h1 {
+  color: MediumAquamarine;
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid green;
+}
+
+.logo {
+  left: 0;
+  border: 1px solid green;
+}
+
+.ul {
+  margin: 0 auto;
+  display: inline;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: space-between;
+  border: 1px solid green;
+}
+
 .header {
   display: inline-flex;
   font-size: 14px;
   font-family: Verdana;
   font-weight: bold;
-  border-bottom: 1px;
+  border: 2px solid limegreen;
   position: fixed;
-  width: 100%;
-  height:100px;
+  padding-bottom: 5px;
 }
 
-.header.logo {
-  height: 75px;
-}
-
-.header h1 {
-  color: MediumAquamarine;
-  font-size: 14px;
-}
-
-nav .ul {
-  margin: 0 auto;
-  display: inline-block;
-  flex-wrap: wrap;
-  align-items: stretch;
-  align-content: space-between;
-}
-
-div {
-  border: 1px solid black;
-}
-
+/* main container */
 .maincontainer {
+  border: 1px solid blue;
   top: 600px;
   overflow: scroll;
   display: inline-flex;
 }
 
 .maincontainer.column {
+  border: 1px solid green;
   display: inline-flex;
   flex-wrap: wrap;
   }
 
 .maincontainer.column.large {
+  border: 1px solid yellow;
   width: 630px;
 }
 
 .maincontainer.column.medium {
+  border: 1px solid red;
   width: 300px;
 }
 
 .maincontainer.column.small {
+  border: 1px solid orange;
   width: 240px;
 }
