@@ -10,6 +10,7 @@ h1 {
   font-size: 14px;
   background-color: white;
   border: 1px solid green;
+  top: 50%;
 }
 
 .logo {
@@ -26,6 +27,7 @@ h1 {
   border: 1px solid green;
 }
 
+
 .header {
   display: inline-flex;
   font-size: 14px;
@@ -39,7 +41,7 @@ h1 {
 /* main container */
 .maincontainer {
   border: 1px solid blue;
-  top: 600px;
+  position: relative;
   overflow: scroll;
   display: inline-flex;
 }
