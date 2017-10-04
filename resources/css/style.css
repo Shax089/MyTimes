@@ -4,6 +4,9 @@ body {
   background-color: WhiteSmoke;
   position: relative;
 }
+div {
+  border: 1px dotted black
+}
 
 /* Header */
 .header {
@@ -12,44 +15,46 @@ body {
   font-family: Verdana;
   font-weight: bold;
   border-bottom: 2px solid black;
-  top: 0;
   position: fixed;
-  width: 100%;
   background-color: white;
-  flex-flow: row wrap;
-  height: 75px;
-  z-index: 3;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 80px;
+  z-index: 1;
+}
+
+
+#logo {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding: 10px 0px black;
+  border: 1px solid black;
+}
+
+.log1 {
+  padding-left: 20px;
 }
 
 b {
   display: inline-flex;
   color: MediumAquamarine;
   font-size: 14px;
-  border: 1px solid green;
   align-items: center;
+  padding-left: 20px;
   }
 
-.logo {
-  display: inline-flex;
-  left: 0;
-  border: 1px solid green;
-  align-items: center;
-}
-
 nav {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  align-content: space-between;
+  justify-content: flex-end;
   background-color: orange;
+  flex-grow: 1;
 }
 
-li {
-  display: inline-flex;
-  flex-flow: row-reverse wrap;
-  padding: 10px 10px;
-  border: 1px solid orange;
-  justify-content: space-between;
-  background-color: blue;
+nav span a {
+ background-color: yellow;
+ padding-right: 30px;
 }
 
 /* main container */
@@ -59,6 +64,7 @@ li {
   display: inline-flex;
   flex-flow: row wrap;
   top: 100px;
+  position: relative;
   }
 
 div .column {
@@ -66,12 +72,23 @@ div .column {
   display: inline-flex;
   }
 
-.column .large {
-  border: 1px solid yellow;
+
+.column {
+  display: inline-flex;
+  }
+
+
+.large {
+  border: 1px solid black;
   width: 630px;
   display: flex;
   background-color: green;
   flex-flow: column wrap;
+  align-content: space-around;
+}
+
+h1 #imgtitle {
+  background-color: blue;
 }
 
 .medium {
@@ -102,11 +119,25 @@ div .column {
   display: flex;
   position: relative;
   background-color: yellow;
+  justify-content: space-between;
+}
+
+#world,
+#us,
+#tech,
+#science {
+  flex-grow: 1;
 }
 
 /* footer */
 
 footer {
   display: flex;
+  background-color: grey;
+  justify-content: center;
+  align-content: flex-end;
+}
+span .footer {
   bottom: 0;
+
 }
