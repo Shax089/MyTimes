@@ -59,7 +59,7 @@ nav span a {
 
 /* main container */
 .maincontainer {
-  border: 1px solid blue;
+  border: 1px solid black;
   top: 80px;
   display: inline-flex;
   position: relative;
@@ -72,14 +72,15 @@ nav span a {
   }
 
 div .column {
-  border: 1px solid green;
+  display: flex;
+  border: 1px solid black;
   width: 2000px;
   flex-flow: row wrap;
   top: 100px;
 }
 
 .large {
-  border: 1px solid yellow;
+  border: 1px solid black;
   width: 630px;
   display: flex;
   background-color: green;
