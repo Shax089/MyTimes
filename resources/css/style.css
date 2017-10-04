@@ -2,7 +2,7 @@
 body {
   border: 1px solid yellow;
   background-color: WhiteSmoke;
-  display: flex;
+  position: relative;
 }
 
 /* Header */
@@ -41,13 +41,11 @@ nav {
   align-items: center;
   align-content: space-between;
   background-color: orange;
-  width: 50%;
-
 }
 
 li {
   display: inline-flex;
-  flex-flow: row wrap;
+  flex-flow: row-reverse wrap;
   padding: 10px 10px;
   border: 1px solid orange;
   justify-content: space-between;
@@ -57,29 +55,32 @@ li {
 /* main container */
 .maincontainer {
   border: 1px solid blue;
-  position: relative;
-  top: 100px;
+
   display: inline-flex;
-  flex-flow: row wrap;
-}
+  }
 
 div .column {
   border: 1px solid green;
   width: 2000px;
+  display: inline-flex;
+  flex-flow: row wrap;
+  top: 100px;
   }
 
-.large {
+.column .large {
   border: 1px solid yellow;
   width: 630px;
-  display: inline-flex;
+  display: flex;
   background-color: green;
+  flex-flow: column wrap;
 }
 
 .medium {
   border: 1px solid red;
   width: 300px;
-  display: inline-flex;
+  display: flex;
   background-color: red;
+  flex-flow: column wrap;
 }
 
 .small {
@@ -87,6 +88,13 @@ div .column {
   width: 240px;
   display: inline-flex;
   background-color: blue;
+  flex-flow: row wrap;
+}
+
+.small p {
+  padding: 10px 10px;
+  border: 1px solid orange;
+  justify-content: space-between;
 }
 
 /* minor container */
