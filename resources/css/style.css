@@ -12,13 +12,25 @@ body {
   font-family: Verdana;
   font-weight: bold;
   border-bottom: 2px solid black;
-  top: 0;
   position: fixed;
   width: 100%;
+  padding: 10;
   background-color: white;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   height: 75px;
   z-index: 3;
+}
+
+#logo {
+  display: inline-flex;
+  border: 2px dotted green;
+  align-items: center;
+  margin: 20px;
+}
+
+.log1 {
+  margin: 20px;
+  background-color: orange;
 }
 
 b {
@@ -28,13 +40,6 @@ b {
   border: 1px solid green;
   align-items: center;
   }
-
-.logo {
-  display: inline-flex;
-  left: 0;
-  border: 1px solid green;
-  align-items: center;
-}
 
 nav,
 ul {
