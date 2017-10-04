@@ -55,16 +55,15 @@ li {
 /* main container */
 .maincontainer {
   border: 1px solid blue;
-
-  display: inline-flex;
-  }
-
-div .column {
-  border: 1px solid green;
   width: 2000px;
   display: inline-flex;
   flex-flow: row wrap;
   top: 100px;
+  }
+
+div .column {
+  border: 1px solid green;
+  display: inline-flex;
   }
 
 .column .large {
