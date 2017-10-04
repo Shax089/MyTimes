@@ -59,11 +59,10 @@ nav span a {
 
 /* main container */
 .maincontainer {
-  border: 1px solid black;
+  border: 1px solid blue;
   top: 80px;
   display: inline-flex;
   position: relative;
-
   }
 
 .column {
