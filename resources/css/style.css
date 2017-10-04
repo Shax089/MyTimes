@@ -60,23 +60,23 @@ nav span a {
 /* main container */
 .maincontainer {
   border: 1px solid blue;
-  top: 80px;
+  width: 2000px;
   display: inline-flex;
+  flex-flow: row wrap;
+  top: 100px;
   position: relative;
   }
 
-.column {
+div .column {
+  border: 1px solid green;
   display: inline-flex;
-
   }
 
-div .column {
-  display: flex;
-  border: 1px solid black;
-  width: 2000px;
-  flex-flow: row wrap;
-  top: 100px;
-}
+ 
+.column {
+  display: inline-flex;
+  }
+
 
 .large {
   border: 1px solid black;
