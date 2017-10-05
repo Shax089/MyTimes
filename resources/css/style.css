@@ -2,6 +2,9 @@
 div {
   border: 1px dotted black
 }
+div {
+  border: 1px dotted black
+}
 
 /* Header */
 .header {
@@ -37,18 +40,21 @@ b {
   font-size: 14px;
   align-items: center;
   padding-left: 20px;
+
 }
+
 
 nav {
   display: inline-flex;
   align-items: center;
   justify-content: flex-end;
   background-color: MediumAquamarine;
+
   flex-grow: 1;
 }
 
 nav span a {
- padding-right: 30px;
+padding-right: 30px;
 }
 
 /* main container */
@@ -152,4 +158,5 @@ footer {
 .footer span {
   background-color: grey;
   align-content: center;
+
 }
