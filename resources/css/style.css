@@ -69,11 +69,11 @@ nav span a {
 
 div .column {
   border: 1px solid green;
-  display: inline-flex;
+  display: flex;
   }
 
 
-.column {
+.column .large {
   display: flex;
   }
 
@@ -87,8 +87,13 @@ div .column {
   align-content: space-around;
 }
 
-h1 #imgtitle {
+.imgcont1 {
+  display: flex;
+}
+
+span #imgtitle {
   background-color: blue;
+  display: flex;
 }
 
 .medium {
