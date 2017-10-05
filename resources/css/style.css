@@ -1,8 +1,6 @@
 /* Universal Styles */
-body {
-  border: 1px solid yellow;
-  background-color: WhiteSmoke;
-  position: relative;
+div {
+  border: 1px dotted black
 }
 div {
   border: 1px dotted black
@@ -42,49 +40,47 @@ b {
   font-size: 14px;
   align-items: center;
   padding-left: 20px;
-  }
+
+}
+
 
 nav {
   display: inline-flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: orange;
+  background-color: MediumAquamarine;
+
   flex-grow: 1;
 }
 
 nav span a {
- background-color: yellow;
- padding-right: 30px;
+padding-right: 30px;
 }
 
 /* main container */
 .maincontainer {
-  border: 1px solid blue;
-  width: 2000px;
-  display: inline-flex;
-  flex-flow: row wrap;
-  top: 100px;
-  position: relative;
-  }
+  display: flex;
+  position: relative;  justify-content: space-around;
+  background-color: blue;
+}
 
-div .column {
-  border: 1px solid green;
-  display: inline-flex;
-  }
-
- 
 .column {
-  display: inline-flex;
-  }
-
-
-.large {
   border: 1px solid black;
   width: 630px;
   display: flex;
-  background-color: green;
+  background-color: turquoise;
   flex-flow: column wrap;
-  align-content: space-around;
+  align-content: stretch;
+  justify-content: space-between;
+}
+
+.imgcont1 {
+  display: flex;
+}
+
+span #imgtitle {
+  background-color: blue;
+  display: flex;
 }
 
 .medium {
@@ -93,20 +89,45 @@ div .column {
   display: flex;
   background-color: red;
   flex-flow: column wrap;
+  align-content: stretch;
 }
 
+div .article2 {
+  display: flex;
+}
+
+h3 .heading2 {
+  display: flex;
+}
+
+
+/* small column*/
 .small {
+  display: flex;
   border: 1px solid orange;
   width: 240px;
-  display: inline-flex;
   background-color: blue;
-  flex-flow: row wrap;
 }
 
-.small p {
-  padding: 10px 10px;
-  border: 1px solid orange;
-  justify-content: space-between;
+span .imgcont2 {
+
+}
+
+#newsbites {
+  display: flex;
+  flex-flow: column nowrap;
+  border: 1px solid yellow;
+  align-items: center;
+  align-content: space-between;
+  position: relative;
+  }
+
+#newsbites h1 {
+
+}
+
+.small span {
+
 }
 
 /* minor container */
@@ -122,18 +143,20 @@ div .column {
 #us,
 #tech,
 #science {
-  flex-grow: 1;
+
 }
 
 /* footer */
 
 footer {
   display: flex;
-  background-color: grey;
-  justify-content: center;
-  align-content: flex-end;
-}
-span .footer {
+  position: relative;
   bottom: 0;
+  justify-content: center;
+}
+
+.footer span {
+  background-color: grey;
+  align-content: center;
 
 }
