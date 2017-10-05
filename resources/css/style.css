@@ -53,31 +53,19 @@ nav span a {
 
 /* main container */
 .maincontainer {
-  border: 1px solid blue;
   display: flex;
-  flex-flow: row wrap;
-  top: 85px;
-  position: relative;
-  align-items: stretch;
-  justify-content: space-around;
+  position: relative;  justify-content: space-around;
+  background-color: blue;
 }
 
 .column {
-  border: 1px solid green;
-  display: flex;
-  justify-content: space-between;
-  background-color: yellow;
-  }
-
-
-
-.large {
   border: 1px solid black;
   width: 630px;
   display: flex;
   background-color: turquoise;
   flex-flow: column wrap;
   align-content: stretch;
+  justify-content: space-between;
 }
 
 .imgcont1 {
