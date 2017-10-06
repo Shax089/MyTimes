@@ -58,7 +58,7 @@ main {
   background-color: blue;
   top: 85px;
   flex-flow: row nowrap;
-  border: 1px solid black;
+  border: 5px double black;
 }
 
 /* large column*/
@@ -73,11 +73,13 @@ main {
 
 .imgcont1 {
   display: flex;
+  border: 1px solid black;
 }
 
 span #imgtitle {
   background-color: blue;
   display: flex;
+  border: 1px solid black;
 }
 
 /* medium column*/
