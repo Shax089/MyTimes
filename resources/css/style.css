@@ -2,9 +2,6 @@
 div {
   border: 1px dotted black
 }
-div {
-  border: 1px dotted black
-}
 
 /* Header */
 .header {
@@ -34,44 +31,44 @@ div {
   padding-left: 20px;
 }
 
-b {
+#logo b {
   display: inline-flex;
   color: MediumAquamarine;
   font-size: 14px;
   align-items: center;
   padding-left: 20px;
-
 }
-
 
 nav {
   display: inline-flex;
   align-items: center;
   justify-content: flex-end;
   background-color: MediumAquamarine;
-
   flex-grow: 1;
 }
 
 nav span a {
-padding-right: 30px;
+ padding-right: 30px;
 }
 
-/* main container */
-.maincontainer {
+/* main container ALL columns*/
+main {
   display: flex;
-  position: relative;  justify-content: space-around;
+  position: relative;
   background-color: blue;
+  top: 85px;
+  flex-flow: row nowrap;
+  border: 1px solid black;
 }
 
-.column {
-  border: 1px solid black;
-  width: 630px;
+/* large column*/
+.large {
   display: flex;
-  background-color: turquoise;
+  background-color: teal;
+  width: 630px;
   flex-flow: column wrap;
   align-content: stretch;
-  justify-content: space-between;
+  flex-basis: 630px;
 }
 
 .imgcont1 {
@@ -83,60 +80,52 @@ span #imgtitle {
   display: flex;
 }
 
+/* medium column*/
 .medium {
-  border: 1px solid red;
+  border: 1px solid black;
   width: 300px;
   display: flex;
   background-color: red;
   flex-flow: column wrap;
-  align-content: stretch;
 }
 
-div .article2 {
-  display: flex;
+h2 {
+  font-size: 16px;
 }
 
-h3 .heading2 {
-  display: flex;
+p.art2txt {
+  font-size: 12px;
 }
-
-
 /* small column*/
 .small {
   display: flex;
   border: 1px solid orange;
   width: 240px;
   background-color: blue;
-}
-
-span .imgcont2 {
+  flex-flow: column wrap;
 
 }
+
+.imgcont2 {
+
+}
+
 
 #newsbites {
   display: flex;
-  flex-flow: column nowrap;
-  border: 1px solid yellow;
-  align-items: center;
-  align-content: space-between;
-  position: relative;
-  }
-
-#newsbites h1 {
-
+  background-color: green;
+  flex-flow: column wrap;
 }
 
-.small span {
-
-}
 
 /* minor container */
 
 .minorcon {
   display: flex;
   position: relative;
+  top: 85px;
   background-color: yellow;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #world,
@@ -151,12 +140,7 @@ span .imgcont2 {
 footer {
   display: flex;
   position: relative;
-  bottom: 0;
-  justify-content: center;
-}
-
-.footer span {
+  top: 85px;
   background-color: grey;
-  align-content: center;
-
+  justify-content: center;
 }
