@@ -52,20 +52,27 @@ nav span a {
 }
 
 /* main container */
-.maincontainer {
+main {
   display: flex;
-  position: relative;  justify-content: space-around;
+  position: relative;
   background-color: blue;
+  top: 85px;
+  flex-flow: row nowrap;
 }
 
 .column {
   border: 1px solid black;
-  width: 630px;
   display: flex;
   background-color: turquoise;
+  justify-content: space-between;
+}
+
+.large {
+  display: flex;
+  background-color: teal;
+  width: 630px;
   flex-flow: column wrap;
   align-content: stretch;
-  justify-content: space-between;
 }
 
 .imgcont1 {
@@ -84,9 +91,10 @@ span #imgtitle {
   background-color: red;
   flex-flow: column wrap;
   align-content: stretch;
+  flex: 1;
 }
 
-div .article2 {
+.art2 {
   display: flex;
 }
 
@@ -101,6 +109,7 @@ h3 .heading2 {
   border: 1px solid orange;
   width: 240px;
   background-color: blue;
+  flex: 1;
 }
 
 span .imgcont2 {
