@@ -95,6 +95,11 @@ h2 {
   font-size: 16px;
 }
 
+#cats {
+  border: 1px solid black;
+  font-size: 12px;
+}
+
 p.art2txt {
   font-size: 12px;
 }
